@@ -48,7 +48,94 @@
 .letter-stamp{font-size:21px}
 .final-result{font-size:clamp(25px,3.2vw,32px);line-height:1.25}
 .reveal-message{font-size:clamp(25px,3.2vw,32px);line-height:1.25}
-.letter-signoff.typing{text-align:left}
+.letter-signoff .signoff-writing{display:inline-block;max-width:100%;white-space:pre-line;vertical-align:top}
 .cake-wrap{width:150px}
 .candle-hint{left:calc(100% - clamp(28px,12vw,170px) - 75px);right:auto;width:max-content;transform:translateX(-50%);text-align:center;white-space:nowrap}
 @media(max-width:760px){.candle-hint{left:50%;right:auto;transform:translateX(-50%)}}
+
+/* Small-screen refinements: keep controls reachable and prevent long content from clipping. */
+@media(max-width:600px){
+  html{scroll-padding-top:60px}
+  .welcome::after{inset:12px}
+  .welcome-content{width:100%;padding:22px}
+  .welcome-content .eyebrow{font-size:8px;letter-spacing:.12em;margin-bottom:24px}
+  .welcome-line{font-size:clamp(27px,8vw,36px);margin:16px 0 8px}
+  .welcome h1{font-size:clamp(38px,11vw,54px);line-height:1.08;margin-bottom:25px}
+  .tap-hint{max-width:250px;margin:16px auto 0;line-height:1.5}
+  .topbar{height:58px;padding:0 17px;font-size:8px;letter-spacing:.05em}
+  .brand{font-size:20px}
+  .hero{min-height:1080px;padding:112px 22px 58px}
+  .hero-copy{text-align:center;margin:0 auto}
+  .hero .eyebrow{font-size:9px;margin-bottom:15px}
+  .hero h2{font-size:clamp(42px,12vw,54px);line-height:1.06;letter-spacing:-.06em}
+  .hero-subtitle{max-width:320px;min-height:0;margin:18px auto;font-size:15px;line-height:1.5}
+  .scroll-cue{margin-top:7px}
+  .hero-photo{width:min(76vw,330px);height:min(91vw,370px);bottom:260px}
+  .hero-photo figcaption{font-size:13px}
+  .cake-wrap{bottom:65px}
+  .cake-label{margin-bottom:22px;font-size:8px}
+  .candle-hint{bottom:20px;font-size:7px;letter-spacing:.1em}
+  .section-pad{padding:72px 19px}
+  .section-heading{margin-bottom:35px}
+  .section-heading h2,.counter-section h2{font-size:clamp(40px,11.5vw,62px);line-height:1.04}
+  .section-heading>p:last-child{font-size:13px;line-height:1.5}
+  .letter-section{min-height:0}
+  .letter-open,.pill-button{min-height:46px}
+  .letter-card.open{max-height:3600px}
+  .letter-paper{padding:38px 22px 32px}
+  .letter-paper::before{left:12px}
+  .letter-stamp{font-size:17px}
+  .script-greeting{font-size:clamp(27px,8vw,32px);line-height:1.2;margin-top:12px}
+  .letter-copy{font-size:clamp(19px,5.6vw,22px);line-height:1.5;min-height:0}
+  .letter-signoff{font-size:clamp(22px,6vw,25px);line-height:1.25;margin-top:22px}
+  .gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin-top:34px}
+  .gallery .memory-card{padding:7px 7px 11px}
+  .gallery .memory-card img{aspect-ratio:4/4.7}
+  .gallery .memory-card span{min-height:43px;padding:9px 3px 0;font-size:clamp(10px,3.1vw,12px);line-height:1.25}
+  .reason-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .reason-card{padding:17px 10px}
+  .reason-card p{font-size:14px;line-height:1.4}
+  .counter{gap:clamp(4px,1.8vw,9px);margin:34px auto 14px}
+  .counter strong{font-size:clamp(23px,7vw,32px)}
+  .counter span{font-size:7px;letter-spacing:.08em}
+  .counter>i{font-size:18px;margin-top:-15px}
+  .secret-section{padding-top:70px;padding-bottom:100px}
+  .secret-section .section-heading{margin-bottom:62px}
+  .secret-section .section-heading h2{font-size:clamp(43px,12vw,62px)}
+  .secret-section .band-reveal.visible{margin-top:46px}
+  .band-circle{width:min(88vw,360px)}
+  .band-member{width:clamp(50px,14vw,60px);height:clamp(50px,14vw,60px)}
+  .band-face{font-size:30px}
+  .band-instrument{font-size:19px}
+  .band-center-heart{font-size:42px}
+  .chant-again{min-height:46px;padding:12px 14px;margin-top:24px;font-size:8px}
+  .final-section{min-height:620px;padding:95px 20px}
+  .final-section h2{font-size:clamp(39px,10.5vw,58px);line-height:1.08}
+  .final-message,.final-result{font-size:clamp(22px,6vw,28px);line-height:1.3}
+  .music-controls{right:12px;bottom:12px;gap:6px}
+  .music-control{min-height:44px;padding:9px 12px}
+  .music-mute{width:44px;height:44px}
+  .lightbox{padding:48px 14px 24px}
+  .lightbox img{max-width:94vw;max-height:70svh}
+  .lightbox p{text-align:center;line-height:1.4}
+}
+@media(max-width:360px){
+  .topbar{padding:0 13px;font-size:7px}
+  .hero{min-height:1040px;padding-inline:17px}
+  .hero h2{font-size:42px}
+  .hero-photo{width:78vw;height:92vw;bottom:250px}
+  .section-pad{padding-inline:16px}
+  .letter-paper{padding-inline:20px}
+  .gallery{gap:11px}
+  .gallery .memory-card span{font-size:10px}
+  .counter{gap:3px}
+  .counter strong{font-size:22px}
+  .counter>i{font-size:15px}
+}
+
+/* Fix spacing between the love-note label and photo on mobile. */
+@media (max-width: 600px) {
+  .hero-photo {
+    bottom: 210px;
+  }
+}
