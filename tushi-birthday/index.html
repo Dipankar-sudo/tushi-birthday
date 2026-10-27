@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fbf2f4" />
+  <meta name="description" content="A little birthday surprise made with love for Tushi." />
+  <title>For Tushi, with love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Sacramento&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="ambient-hearts" id="ambientHearts" aria-hidden="true"></div>
+
+  <section class="welcome" id="welcome" aria-label="Birthday surprise welcome">
+    <div class="welcome-orb orb-one"></div><div class="welcome-orb orb-two"></div>
+    <div class="welcome-content">
+      <p class="eyebrow">a little something, made just for you</p>
+      <div class="welcome-heart" aria-hidden="true">♥</div>
+      <p class="welcome-line">Hey, my favourite person...</p>
+      <h1>Someone very special<br />was born <em>today.</em></h1>
+      <p class="birthday-date" id="birthdayDate"></p>
+      <button class="pill-button primary" id="openSurprise">Open your surprise <span>♥</span></button>
+      <p class="tap-hint">best opened with sound on — whenever you’re ready</p>
+    </div>
+    <span class="float-heart fh1">♥</span><span class="float-heart fh2">♡</span><span class="float-heart fh3">♥</span><span class="float-heart fh4">♡</span>
+  </section>
+
+  <main id="experience" class="experience" aria-hidden="true">
+    <nav class="topbar"><a class="brand" href="#top">For <span id="brandName">Tushi</span></a><a href="#memories">our memories <span>↗</span></a></nav>
+    <section class="hero" id="top">
+      <div class="hero-glow"></div><div class="hero-sparkles" aria-hidden="true">✦　·　✧　·　✦</div>
+      <div class="hero-copy">
+        <p class="eyebrow">today is all about you</p>
+        <h2 id="birthdayHeading">Happy Birthday,<br /><em>My Love</em> <span class="red-heart">♥</span></h2>
+        <p class="hero-subtitle" id="heroSubtitle"></p>
+        <a class="scroll-cue" href="#letter">a little love note <span>↓</span></a>
+      </div>
+      <figure class="hero-photo photo-frame"><img src="assets/memory-01.jpeg" alt="A favourite moment together" /><figcaption>my favourite place is next to you</figcaption></figure>
+      <div class="balloon balloon-a" aria-hidden="true">♥</div><div class="balloon balloon-b" aria-hidden="true">♥</div>
+      <div class="cake-wrap">
+        <div class="cake-label">make a little wish</div>
+        <button class="cake" id="cakeButton" aria-label="Blow out the birthday candles" title="Tap to blow out the candles">
+          <span class="flame f1"></span><span class="flame f2"></span><span class="flame f3"></span>
+          <span class="candle c1"></span><span class="candle c2"></span><span class="candle c3"></span>
+          <span class="cake-top"></span><span class="cake-body"><i>♥</i></span><span class="cake-base"></span>
+        </button>
+      </div>
+      <p class="candle-hint" id="candleHint">tap the candles to make a wish</p>
+    </section>
+
+    <section class="letter-section section-pad" id="letter">
+      <div class="section-heading"><p class="eyebrow">01 — from my heart</p><h2>A note for <em>you.</em></h2><p>Some things are better said slowly.</p></div>
+      <button class="letter-open" id="letterOpen"><span>✉</span> Read my heart <b>♥</b></button>
+      <article class="letter-card" id="letterCard" aria-hidden="true">
+        <div class="letter-paper"><div class="letter-stamp">for you ♥</div><p class="script-greeting" id="letterGreeting"></p><div class="letter-copy" id="letterCopy"></div><p class="letter-signoff" id="letterSignoff"></p></div>
+      </article>
+    </section>
+
+    <section class="memory-section section-pad" id="memories">
+      <div class="section-heading light"><p class="eyebrow">02 — our little archive</p><h2>Six frames.<br /><em>One lovely us.</em></h2><p>Tap a photo to see it a little closer.</p></div>
+      <div class="gallery" id="gallery">
+        <button class="memory-card card-tall" data-photo="assets/memory-02.jpeg" data-caption="One of those easy, happy days"><img src="assets/memory-02.jpeg" alt="A smiling dinner memory" /><span>one of those easy, happy days</span></button>
+        <button class="memory-card card-small" data-photo="assets/memory-03.jpeg" data-caption="Flowers for my flower girl"><img src="assets/memory-03.jpeg" alt="Tushi holding flowers" /><span>flowers for my flower girl</span></button>
+        <button class="memory-card card-tall card-shift" data-photo="assets/memory-04.jpeg" data-caption="Your smile, every single time"><img src="assets/memory-04.jpeg" alt="A birthday dinner together" /><span>your smile, every single time</span></button>
+        <button class="memory-card card-wide" data-photo="assets/memory-05.jpeg" data-caption="Saving sunsets with you"><img src="assets/memory-05.jpeg" alt="A sunset by the water" /><span>saving sunsets with you</span></button>
+        <button class="memory-card card-small card-last" data-photo="assets/memory-06.jpeg" data-caption="My favourite person, always"><img src="assets/memory-06.jpeg" alt="A warm evening selfie together" /><span>my favourite person, always</span></button>
+        <button class="memory-card card-square" data-photo="assets/memory-01.jpeg" data-caption="Still my favourite view"><img src="assets/memory-01.jpeg" alt="A sweet moment together" /><span>still my favourite view</span></button>
+      </div>
+    </section>
+
+    <section class="reasons-section section-pad">
+      <div class="section-heading"><p class="eyebrow">03 — a few of a million</p><h2>Reasons I love <em>you.</em></h2><p>Tap a heart. I could keep going forever.</p></div>
+      <div class="reason-grid" id="reasonGrid"></div>
+      <button class="heart-reveal" id="heartReveal" aria-label="Reveal a sweet message">♥</button><p class="reveal-message" id="heartMessage" aria-live="polite"></p>
+    </section>
+
+    <section class="counter-section section-pad">
+      <p class="eyebrow">and every second since</p><h2>Time with <em>you.</em></h2>
+      <div class="counter" id="counter" aria-label="Time together"><div><strong id="days">—</strong><span>days</span></div><i>:</i><div><strong id="hours">—</strong><span>hours</span></div><i>:</i><div><strong id="minutes">—</strong><span>minutes</span></div><i>:</i><div><strong id="seconds">—</strong><span>seconds</span></div></div>
+      <p class="counter-foot" id="counterFoot"></p>
+    </section>
+
+    <section class="secret-section section-pad">
+      <div class="section-heading"><p class="eyebrow">psst… this one’s just for you</p><h2>A tiny <em>secret.</em></h2></div>
+      <button class="envelope" id="envelope" aria-label="Open the birthday band surprise"><span class="env-heart">♥</span><span class="env-flap"></span><span class="env-label">open the surprise</span></button>
+      <div class="band-reveal" id="bandReveal" aria-hidden="true">
+        <p class="chant-bubble" id="birthdayChant">Happy Birthday, Tushi!</p>
+        <div class="band-circle" id="bandCircle" aria-label="A circle of dancing birthday musicians">
+          <div class="band-member band-one"><span class="band-face">🐻</span><span class="band-instrument">🥁</span></div>
+          <div class="band-member band-two"><span class="band-face">🐰</span><span class="band-instrument">🎺</span></div>
+          <div class="band-member band-three"><span class="band-face">🐱</span><span class="band-instrument">🪘</span></div>
+          <div class="band-member band-four"><span class="band-face">🐸</span><span class="band-instrument">🎷</span></div>
+          <div class="band-member band-five"><span class="band-face">🐼</span><span class="band-instrument">🎸</span></div>
+          <div class="band-member band-six"><span class="band-face">🐥</span><span class="band-instrument">🥁</span></div>
+          <div class="band-center-heart" aria-hidden="true">♥</div>
+          <p class="chant-line instrumental hidden" id="chantLine" aria-live="polite"></p>
+        </div>
+        <button class="chant-again" id="chantAgain">Play the birthday song again <span>♫</span></button>
+      </div>
+    </section>
+
+    <section class="final-section" id="final">
+      <div class="starfield" aria-hidden="true">✦　　·　　 ✧　·　　 ✦　　·　✧</div><div class="big-heart" aria-hidden="true">♥</div>
+      <p class="eyebrow">one last thing</p><h2>Today is your day,<br />but you will always be<br /><em>my favourite part</em><br />of every day.</h2>
+      <p class="final-message" id="finalMessage"></p>
+      <button class="pill-button final-button" id="finalButton">one more wish <span>♥</span></button>
+      <div class="final-result" id="finalResult" aria-live="polite"></div>
+    </section>
+    <footer>made with a very full heart for <span id="footerName">Tushi</span> ♥</footer>
+  </main>
+
+  <div class="music-controls" id="musicControls"><button class="music-control" id="musicControl" aria-label="Play background music" title="Play music"><span class="music-icon">♫</span><span id="musicLabel">music</span></button><button class="music-mute" id="musicMute" aria-label="Mute background music" title="Mute music">◖</button></div>
+  <audio id="backgroundMusic" preload="none"></audio>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo preview"><button class="lightbox-close" id="lightboxClose" aria-label="Close photo">×</button><img id="lightboxImage" alt="" /><p id="lightboxCaption"></p></div>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
